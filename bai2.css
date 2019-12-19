@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#menu{
+    width: 100%;
+    height: 30px;
+    background: red;
+}
+#menu>ul>li{
+    float: left;
+    list-style: none;
+    border-left: 1px solid white;
+    border-left: 1px solid white;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 30px;
+    position: relative;
+ 
+}
+#menu>ul>li a{
+    text-decoration: none;
+    color: white;
+}
+#menu>ul>li:hover{
+    background: white;
+    cursor: pointer;
+}
+#menu>ul>li:hover  a{
+    color: red;
+}
+#menu>ul>li:hover #submenu{
+    display: block;
+}
+#menu>ul>li:hover #submenu li a{
+    color: white;
+}
+#submenu{
+    position: absolute;
+    top:30px;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+#submenu li{
+    clear: left;
+}
+#submenu li{
+    background: red;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+#submenu li:hover{
+    background: white !important;
+}
+#submenu li:hover  a{
+    color:red !important;
+}
